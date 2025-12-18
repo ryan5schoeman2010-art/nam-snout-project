@@ -1,1 +1,0 @@
-<img src="logo.svg" alt="Nam Snout Project Logo" style="width: 150px; margin-bottom: 20px;">
