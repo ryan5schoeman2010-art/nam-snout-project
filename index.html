@@ -20,4 +20,92 @@
         .pet-card { background: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden; text-align: center; }
         .pet-card img { width: 100%; height: 250px; object-fit: cover; }
         .pet-card h3 { margin: 15px 0 5px; }
-        .pet-card p { padding:
+        .pet-card p { padding: 0 15px; }
+        .btn { display: inline-block; background: #4285f4; color: white; padding: 12px 24px; border-radius: 5px; text-decoration: none; margin: 10px; font-weight: bold; transition: background 0.3s; }
+        .btn:hover { background: #3367d6; }
+        .submit-section, .socials-section { background: #e3f2fd; padding: 40px 20px; text-align: center; }
+        .about { background: #fff; padding: 50px 20px; text-align: center; }
+        .contact { background: #fff3e0; padding: 50px 20px; text-align: center; }
+        form { max-width: 600px; margin: 0 auto; }
+        input, textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; }
+        footer { background: #333; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+        @media (max-width: 768px) { 
+            nav ul { flex-direction: column; }
+            h1 { font-size: 2.5em; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#pets">Adopt</a></li>
+            <li><a href="#socials">Our Socials</a></li>
+            <li><a href="https://forms.gle/7NUoc3PoXSYXPk3V7" target="_blank">Adoption Form</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <header>
+            <h1>Nam Snout Project</h1>
+            <p>Rescuing & Rehoming Cats and Dogs</p>
+            <p>Find your new best friend – Adopt a loving cat or dog today!</p>
+        </header>
+
+        <section class="submit-section">
+            <div class="container">
+                <h2>Submit a Pet for Adoption (Owners/Admins Only)</h2>
+                <p>Only selected users (owners surrendering pets or admins) can submit details and images. Our team reviews all submissions before adding to the site.</p>
+                <a href="https://forms.gle/7NUoc3PoXSYXPk3V7" target="_blank" class="btn">Submit via Secure Form</a>
+            </div>
+        </section>
+
+        <section id="pets">
+            <h2>Adoptable Cats & Dogs</h2>
+            <div class="container">
+                <div class="pets-grid">
+                    <div class="pet-card">
+                        <img src="https://arl-iowa.org/wp-content/uploads/2025/09/introducecattodog.jpg" alt="Adorable cat and dog">
+                        <h3>Max the Dog</h3>
+                        <p>Friendly 2-year-old Labrador mix. Great with kids and loves playtime!</p>
+                        <a href="https://forms.gle/7NUoc3PoXSYXPk3V7" target="_blank" class="btn">Apply to Adopt</a>
+                    </div>
+                    <!-- Add more approved pets here manually -->
+                </div>
+            </div>
+        </section>
+
+        <section id="socials" class="socials-section">
+            <div class="container">
+                <h2>Our Socials</h2>
+                <p>Follow us for updates, cute photos, and success stories!</p>
+                <!-- Add your real links here -->
+                <p><a href="#" class="btn">Facebook</a> <a href="#" class="btn">Instagram</a> <a href="#" class="btn">TikTok</a></p>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <h2>About Nam Snout Project</h2>
+                <p>We are a non-profit dedicated to rescuing cats and dogs. Our goal is loving forever homes.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>For inquiries, volunteering, or donations:</p>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Nam Snout Project. All rights reserved.</p>
+    </footer>
+</body>
+</html>
