@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/pets"      # Where uploaded pet photos will be saved
+public_folder: "/images/pets"    # How photos are accessed on the site
+
+collections:
+  - name: "pets"
+    label: "Adoptable Pets"
+    folder: "pets"                 # Where pet info files will be saved
+    create: true                   # Allow creating new pets
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Age", name: "age", widget: "string" }
+      - { label: "Breed/Type", name: "breed", widget: "string" }
+      - { label: "Gender", name: "gender", widget: "select", options: ["Male", "Female"] }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Main Photo", name: "photo", widget: "image", required: true }
+      - { label: "Extra Photos", name: "gallery", widget: "list", field: { label: "Photo", name: "photo", widget: "image" } }
